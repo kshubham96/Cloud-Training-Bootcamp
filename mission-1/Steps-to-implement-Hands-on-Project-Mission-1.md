@@ -12,32 +12,27 @@
   2. Upload **accessKeys.csv** and **mission1.zip** hands-on file to GCP Cloud Shell 
   3. Check if upload has been successfully completed using the command **ls -la**
   4. Hands-on files preparation
+     	```
+	mkdir mission1_en
+	mv mission1.zip mission1_en
+	cd mission1_en
+	unzip mission1.zip
+	mv ~/accessKeys.csv mission1/en
+	cd mission1/en
+	chmod +x *.sh
 
-    ```
-    mkdir mission1_en
-    mkdir mission1_en
-    mv mission1.zip mission1_en
-    cd mission1_en
-    unzip mission1.zip
-    mv ~/accessKeys.csv mission1/en
-    cd mission1/en
-    chmod +x *.sh
-    ```
+  6. Run the following commands to prepare AWS and GCP environment. Authorize when asked
+	```
+	./aws_set_credentials.sh accessKeys.csv
+	gcloud config set project <project_id>
+	```
 
-  5. Run the following commands to prepare AWS and GCP environment. Authorize when asked.
-
-    ```
-    ./aws_set_credentials.sh accessKeys.csv
-    gcloud config set project <project_id>
-    ```
-
-  6. Execute this command
-
+  7. Execute this command
        ```
        ./gcp_set_project.sh
        ```
 
-  7. Enable the Container Registry API, Kubernetes Engine API and the Cloud SQL API
+  8. Enable the Container Registry API, Kubernetes Engine API and the Cloud SQL API
 
     ```
     gcloud services enable containerregistry.googleapis.com 
