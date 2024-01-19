@@ -78,3 +78,5 @@ This bootcamp is divided into 3 missions:
 2. Mission 2: To convert a database and an application to run on MultiCloud platform (**GCP** and **AWS**), including **Kubernetes** and **Docker** on this path.
 3. Mission 3: To migrate the application files and data from a database, also known as **Cloud Migration** process.
 
+## References
+https://thecloudbootcamp.com/en/event-multicloud-day3-icp2-488/?utm_source=email&utm_medium=email&utm_content=&utm_campaign=icp_2023-12-12&email=shubhamkhaladkar96@outlook.com
