@@ -70,7 +70,7 @@ Verify data import and file sync.
 Test the application to view guest results.
 This hands-on project involves setting up infrastructure on AWS and GCP, configuring databases, deploying an application, and performing data and file migrations between cloud platforms.
 
-In a nutshell,
+IN A NUTSHELL,
 
 This bootcamp is divided into 3 missions:
 
